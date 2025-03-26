@@ -1,0 +1,91 @@
+
+@font-face {
+    font-family: CeraProMedium;
+    src: url('../fonts/Cera Pro Medium.woff') format("woff");
+}
+@font-face {
+    font-family: LatoLight;
+    src: url('../fonts/Lato-Light.woff') format("woff");
+}
+
+@font-face {
+    font-family: Genericons;
+    src: url('../fonts/Genericons.woff2') format("woff2");
+}
+/* @font-face {
+    font-family: LatoRegular;
+    src: url('../fonts/Lato-Regular.woff') format("woff");
+} */
+/* @font-face {
+    font-family: CeraProBlack;
+    src: url('../fonts/Cera Pro Black.woff') format("woff");
+} */
+/* @font-face {
+    font-family: RobotoLight;
+    src: url('../fonts/Roboto-Light.woff') format("woff");
+} */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    line-height: 1.7;
+    color: gray;
+    font-weight: 300;
+    font-size: 1rem;
+    transition: .3s;
+    font-family: "Jost", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
+}
+html, body  {
+    scroll-behavior: smooth;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    /* font-family: LatoRegular, sans-serif; */
+    letter-spacing: 1.5px;
+    color: #000;
+    font-weight: 600;
+}
+.page-wrapper {
+    padding-top: 80px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type=number] {
+    -moz-appearance: textfield;
+}
+div.main {
+    width: 100%;
+}
+.sec-ttl { 
+    font-size: 2.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    font-family: inherit;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #000000;
+}
+
+@media (max-width: 996px){
+    .page-wrapper {
+        padding-top: 70px;
+    }
+}
+@media (max-width: 576px){
+    .page-wrapper {
+        padding-top: 70px;
+    }
+}
+@media (max-width: 414px){
+    .page-wrapper {
+        padding-top: 60px;
+    }
+}

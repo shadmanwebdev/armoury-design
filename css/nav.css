@@ -1,0 +1,224 @@
+header {
+    background-color: transparent;
+    width: 100vw;
+    height: auto;
+    position: fixed;
+    z-index: 2000;
+    opacity: 0;
+    animation: 1s drop 2s ease-in-out forwards;
+}
+@keyframes drop {
+    0% {
+        opacity: 0;
+        transform: translateY(-5vw);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+nav {
+    width: 50vw;
+    margin: auto;
+}
+
+ul {
+    list-style: none;
+    justify-content: space-evenly;
+}
+nav ul {
+    display: flex;
+    flex-direction: row nowrap;
+}
+a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+li {
+    font-family: LatoLight;
+    color: white;
+    font-size: 14px;
+    padding: 20px;
+    text-transform: uppercase;
+}
+
+.inverse {
+    background-color: rgb(0, 0, 0) !important;
+}
+
+
+/* BUTTON */
+div.button {
+    display: none;
+    margin-left: 88vw;
+    cursor: pointer;
+    width: 28px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding: .2vw 1vw .2vw .5vw;
+}
+div.button > span{
+    width: 28px;
+    height: 3px;
+    background-color: white;
+}
+
+@media only screen and (max-width: 996px) {
+    nav {
+        width: 100vw;
+    }
+    div.button {
+        display: flex;
+        flex-flow: column nowrap;
+        position: fixed;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        z-index: 20000;
+    }
+    div.button > span{
+        position: absolute;
+    }
+    div.button > span:nth-child(1) {
+        top: 5px;
+    }
+    div.button > span:nth-child(2) {
+        top: 15px;
+    }
+    div.button > span:nth-child(3) {
+        top: 25px;
+    }
+    /* BUTTON OPEN */
+    div.button > span.open:nth-child(1) {
+        top: 15px;
+        animation: 500ms animate-span-1 ease-in-out forwards;
+    }
+    div.button > span.open:nth-child(2) {
+        animation: 500ms animate-span-2 ease-in-out forwards;
+    }
+    div.button > span.open:nth-child(3) {
+        top: 15px;
+        animation: 500ms animate-span-3 ease-in-out forwards;
+    }
+    /* BUTTON CLOSE */
+    div.button > span.close:nth-child(1) {
+        top: 5px;
+        animation: 500ms animate-span-4 ease-in-out forwards;
+    }
+    div.button > span.close:nth-child(2) {
+        top: 15px;
+        animation: 500ms animate-span-5 ease-in-out forwards;
+    }
+    div.button > span.close:nth-child(3) {
+        top: 25px;
+        animation: 500ms animate-span-6 ease-in-out forwards;
+    }
+    ul.menu {
+        display: none;
+    }
+    ul.menu > a {
+        margin: 0 5vw;
+    }
+    ul.menu li {
+        padding: 2vw 5vw;
+        font-size: 2.5vw;
+    }
+    ul.menu {
+        display: flex;
+        flex-flow: column nowrap;
+        transform: translateX(-101vw);
+        background-color: rgb(0, 0, 0);
+        overflow: visible;
+        padding: 10vw 0;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        z-index: 1000;
+        justify-content: start;
+    }
+    /* OPEN */
+    ul.menu.open {
+        animation: 500ms animate forwards;
+    }
+    /* CLOSE */
+    ul.menu.close {
+        animation: 500ms animate-reverse forwards;
+    }
+    /* BUTTON ANIMATION */
+    @keyframes animate-span-1 {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(130deg);
+        }
+    }
+    @keyframes animate-span-2 {
+        0% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+        100% {
+            transform: translateX(-10vw);
+            opacity: 0;
+        }
+    }
+    @keyframes animate-span-3 {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(-130deg);
+        }
+    }
+    /* REVERSE BUTTON ANIMATION */
+    @keyframes animate-span-4 {
+        0% {
+            transform: rotate(130deg);
+        }
+        100% {
+            transform: rotate(0deg);
+        }
+    }
+    @keyframes animate-span-5 {
+        0% {
+            transform: translateX(-10vw);
+            opacity: 0;
+        }
+        100% {
+            transform: translateX(0vw);
+            opacity: 1;
+        }
+    }
+    @keyframes animate-span-6 {
+        0% {
+            transform: rotate(-130deg);
+        }
+        100% {
+            transform: rotate(0deg);
+        }
+    }
+    @keyframes animate {
+        0% {
+            transform: translateX(-101vw);
+        }
+        100% {
+            transform: translateX(0vw);
+        }
+    }
+    @keyframes animate-reverse {
+        0% {
+            transform: translateX(0vw);
+        }
+        100% {
+            transform: translateX(-101vw);
+        }
+    }
+}
+@media only screen and (max-width: 414px) {
+    ul.menu li {
+        padding: 4vw 10vw;
+        font-size: 20px;
+    }
+}

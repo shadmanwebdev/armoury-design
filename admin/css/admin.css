@@ -1,0 +1,12 @@
+.thumbnail {
+    width: 100px; 
+    height: 80px;
+}                
+.thumbnail img {
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;
+}
+.error > div {
+    color: red;
+}

@@ -1,0 +1,31 @@
+.cookie-policy {
+    max-width: 636px;
+    margin: 0 auto;
+    padding: 50px 0;
+    background: #fff;
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+}
+.cookie-policy h2 {
+    font-size: 42px;
+    margin-top: 56px;
+    margin-bottom: 16px;
+    /* text-align: center; */
+}
+.cookie-policy p {
+    font-size: 19px;
+    color: #222;
+}
+.cookie-policy .jUyLKW > p {
+    margin: 16px 0;
+}
+.cookie-policy .giboxe {
+    background: #fff;
+    position: relative;
+    overflow-wrap: break-word;
+}
+.cookie-policy a {
+    cursor: pointer;
+    color: #ec1a2e;
+    text-decoration: none;
+}

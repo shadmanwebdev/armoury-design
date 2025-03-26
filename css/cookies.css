@@ -1,0 +1,215 @@
+#cookie_consent_popup {
+    max-width: 600px;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    margin-left: -300px;
+    margin-top: -40vh;
+    position: fixed;
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgb(249, 249, 249);
+    color: rgb(51, 51, 51);
+    border-radius: 0px;
+    padding: 40px 50px;
+    z-index: 10001;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+#cookie_consent_popup h1{
+    font-size:1.2em;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+#cookie_consent_popup p{
+    font-size: 15px;
+}
+#cookie_consent_popup #close_cookie_box{
+    position:absolute;
+    top:20px;right:20px;
+    cursor:pointer;
+    font-size:1.3em;
+}
+.btns-grid {
+    height: 45px;
+    width: 400px;
+    margin-top: 20px;
+    display: flex;
+    flex-flow: row nowrap;
+}
+.popup-btn {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    -webkit-appearance: button;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    color: #eee;
+    margin-top: 10px;
+    cursor: pointer;
+    font-family: inherit;
+    letter-spacing: 1.5px;
+    font-size: 13px;
+    white-space: nowrap;
+    border-radius: 0px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+#settings-btn {
+    background-color: rgb(230, 230, 230);
+    color: rgb(30, 136, 229);
+    margin-right: 20px;
+}
+#accept-btn {
+    background-color: rgb(30, 136, 229);
+    color: rgb(230, 230, 230);
+}
+/* Preference */
+.cookie-preference {
+    max-width: 700px;
+    height: auto;
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    /* margin-top: -500px; */
+    margin-left: -350px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgb(249, 249, 249);
+    color: rgb(51, 51, 51);
+    border-radius: 0px;
+    padding: 40px 50px;
+    z-index: 10001;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.popup-heading h4 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.pref-group {
+    margin-bottom: 20px;
+}
+.pref-group .row {
+    display: flex;
+    flex-flow: row nowrap;
+    margin-bottom: 5px;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    height: 20px;
+    width: 40px;
+    margin-left: 16px;
+}
+.switch input {
+    position: absolute;
+    opacity: 0;
+}
+.switch input:checked+.tick {
+    transform: translate3d(100%, 0, 0);
+}
+.tick {
+    position: relative;
+    z-index: 2;
+    content: " ";
+    display: block;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 2px 6px rgb(0 0 0 / 30%);
+    transition: transform .3s;
+    cursor: pointer;
+}
+.tick-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: #dedede;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.preference-description {
+    padding: 15px 20px 15px 20px;
+    font-size: 14px;
+    background-color: #f4f1ea;
+}
+.category-name {
+    margin-left: 20px;
+    font-size: 16px;
+}
+.category-checkbox:checked + .tick + .tick-bg {
+    background-color: #8bc34a !important;
+}
+/* Buttons */
+.confirm {
+    
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    -webkit-appearance: button;
+    max-width: 180px;
+    height: 50px;
+    border: 0;
+    color: #eee;
+    margin-top: 10px;
+    padding: 15px 25px;
+    cursor: pointer;
+    transition: opacity .2s;
+    font-family: inherit;
+    letter-spacing: 1.5px;
+    font-size: 13px;
+    white-space: nowrap;
+    border-radius: 0px;
+    background-color: rgb(30, 136, 229);
+    color: rgb(230, 230, 230);
+    margin-top: 20px;
+    margin-right: auto;
+}
+.hide_popup {
+    display: none;
+}
+.show_popup {
+    display: block;
+}
+#popBg {
+    background-color: rgba(0, 0, 0, .5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0;
+    z-index: -1;
+}
+.light {
+    opacity: 0;
+    
+    z-index: 100;
+}
+.dark {
+    opacity: 1;
+}
+@media screen and (max-width: 600px) {
+    #cookie_consent_popup {
+        max-width: 90%;
+        margin-left: -45%;
+        padding: 30px 20px;
+    }
+    .cookie-preference {
+        max-width: 90%;
+        margin-left: -45%;
+        padding: 30px 20px;
+    }
+    .btns-grid {
+        height: 45px;
+        width: 300px;
+        margin-top: 20px;
+        display: flex;
+        flex-flow: row nowrap;
+    }
+}

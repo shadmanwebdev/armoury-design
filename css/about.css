@@ -1,0 +1,144 @@
+#about {
+    display: flex;
+    flex-flow: row nowrap;
+}
+#about > div {
+    width: 50vw;
+    padding: 2vw;
+    height: 47vw;
+}
+#about > div:nth-child(1) {
+    background-color: black;
+    padding: 4vw 2vw;
+}
+#about > div:nth-child(2) {
+    background-color: white;
+    padding: 4vw 2vw;
+}
+.about-title {
+    width: 40vw;
+    margin: 2vw auto;
+}
+.about-title h2 {
+    font-size: 3vw;
+    font-weight: 300;
+    text-align: center;
+    font-family: 'Oswald';
+}
+.about-content {
+    width: 40vw;
+    margin: .5vw auto .5vw auto;
+}
+.about-content p {
+    font-size: 1.2vw;
+    line-height: 2vw;
+    font-family: 'Montserrat';
+    text-align: center;
+}
+/* ABOUT SOCIAL */
+.about-social-wrap {
+    display: flex;
+    flex-flow: column nowrap;
+    margin: auto;
+    justify-content: center;
+}
+.about-social-wrap .social {
+    margin: 0;
+    padding: .2vw 1vw;
+    margin: auto;
+}
+.skills {
+    display: flex;
+    flex-flow: column wrap;
+}
+.skill {
+    width: 20vw;
+    padding: 1vw 2vw;
+    margin: 1vw auto;
+    background-color: black;
+    text-align: left;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+.skill h3 {
+    font-size: 1.5vw;
+    font-weight: 300;
+}
+
+@media only screen and (max-width: 996px) {
+    #about {
+        display: flex;
+        flex-flow: row wrap;
+    }
+    #about > div {
+        width: 80vw;
+        margin: auto;
+        padding: 2vw;
+    }
+    #about > div:nth-child(1) {
+        margin: 5vw auto;
+        height: auto;
+    }
+    #about > div:nth-child(2) {
+        height: 55vw;
+    }
+    .about-title {
+        width: 80vw;
+        margin: 3vw auto 1vw auto;
+    }
+    .about-title h2 {
+        font-size: 5vw;
+        font-weight: 300;
+    }
+    .about-content {
+        width: 80vw;
+        margin: .5vw auto .5vw auto;
+    }
+    .about-content p {
+        font-size: 2vw;
+        line-height: 4vw;
+        padding: 3vw 0;
+    }
+    /* .skills {
+        display: flex;
+        flex-flow: column wrap;
+    } */
+    .skill {
+        width: 35vw;
+        padding: 2vw 4vw;
+        margin: 1vw auto;
+        text-align: left;
+        font-weight: 300;
+    }
+    .skill h3 {
+        font-size: 2vw;
+        font-weight: 300;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .about-title h2 {
+        font-size: 30px;
+        font-weight: 300;
+    }
+    .about-content p {
+        font-size: 15px;
+        line-height: 25px;
+        padding: 2vw 0;
+    }
+    #about > div:nth-child(2) {
+        height: auto;
+    }
+    .skill {
+        width: 70vw;
+        padding: 4vw 6vw;
+        margin: 1vw auto;
+        text-align: left;
+        font-weight: 300;
+    }
+    .skill h3 {
+        font-size: 13px;
+        font-weight: 400;
+        font-family: 'montserrat';
+    }
+}

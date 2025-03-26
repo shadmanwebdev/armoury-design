@@ -1,0 +1,30 @@
+.faq-section {
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+}
+.faq-section #faq-row-2 {
+    margin-top: 2rem;
+}
+#faq h5 {
+    line-height: 1.5;
+    font-weight: 500;
+    font-weight: 600!important;
+    font-size: 1.25rem;
+    color: #505050 !important;
+}
+#faq p {
+    font-size: 18px;
+    color: #868e96 !important;
+}
+#faq .btn {
+    margin: 0 auto;
+}
+@media (min-width: 992px) {
+    .faq-section {
+        padding-bottom: 7rem;
+        padding-top: 7rem;
+    }
+    .faq-section #faq-row-2 {
+        margin-top: 3rem;
+    }
+}

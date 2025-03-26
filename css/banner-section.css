@@ -1,0 +1,45 @@
+/* BANNER AREA */
+.banner_area {
+    position: relative;
+    z-index: 1;
+    min-height: 300px;
+    background: #00428a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner_area .banner_inner {
+    width: 30%;
+}
+.banner_area .banner_inner .banner_content {
+    width: 100%;
+    /* margin-top: 20px; */
+}
+.banner_area .banner_inner .banner_content h2 {
+    color: #fff;
+    font-size: 36px;
+    /* margin-bottom: 10px; */
+    font-weight: 700;
+}
+/* .banner_area .banner_inner .banner_content p {
+    color: #fff;
+    text-align: center;
+    margin: auto;
+    font-size: 15px;
+} */
+.banner_area .banner_inner .banner_content .page_link a:before {
+    content: "\f0da";
+    font: normal normal normal 14px/1 FontAwesome;
+    position: absolute;
+    right: -25px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+@media (max-width: 576px){
+    .banner_area .banner_inner {
+        width: 70%;
+    }
+}

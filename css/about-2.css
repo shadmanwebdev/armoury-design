@@ -1,0 +1,125 @@
+.about-section {
+    padding: 3rem 0;
+}
+.container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@font-face {
+	font-family: icomoon;
+	src:url('../fonts/icomoon.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.pb-5, .py-5 {
+    padding-bottom: 3rem!important;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+.about-section .img-years {
+    position: relative;
+}
+.sub-title {
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-size: 12px;
+    font-weight: 700;
+    color: #ff5733;
+    margin-top: 22px;
+}
+
+.about-section h3 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #000;
+}
+.mb-4, .my-4 {
+    margin-bottom: 1.5rem!important;
+}
+.text-left {
+    text-align: left!important;
+}
+.mb-5, .my-5 {
+    margin-bottom: 3rem!important;
+}
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}
+.ul-check li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 10px;
+}
+.ul-check.success li:before {
+    color: #28a745;
+}
+.ul-check li:before {
+    font-family: icomoon;
+    content: "\e5ca";
+    position: absolute;
+    left: 0;
+    top: 0.6em;
+    font-size: 20px;
+    line-height: 0;
+}
+.btn-primary {
+    width: 200px;
+    height: 45px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    transition: .3s;
+    margin: 10px 0 0 0;
+    color: #fff;
+    background-color: rgb(51,102,204);    
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: rgb(14, 69, 178); 
+}
+.btn.btn-lg {
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+@media (min-width: 576px){
+    .container {
+        max-width: 540px;
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+    .about-section {
+        padding: 8rem 0;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+    .sub-title {
+        margin-top: 10px;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
